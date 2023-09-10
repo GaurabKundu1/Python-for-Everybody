@@ -19,7 +19,7 @@ while True:
         elif numint > largest :
             largest = numint
     except:
-         print("Invalid input")
+        print("Invalid input")
     continue
 print("Maximum is", largest)
 print("Minimum is", smallest)
