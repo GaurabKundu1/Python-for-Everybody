@@ -6,14 +6,17 @@
 # Do not worry about error checking the user input unless you want to - you can assume the user types numbers properly. 
 # Do not name your variable sum or use the sum() function.
 
-h = float(input("Enter Hours:"))
-r = float(input("Enter Rate:"))
-def computepay(h,r) :
-    if h > 40 :
-        return 40 * r + (h-40)*1.5*r
-    elif h < 0 :
+hours = float(input("Enter the Work Hours:"))
+rate_per_hours = float(input("Enter the rate:"))
+
+def computepay(hours, rate_per_hours):
+    if hours > 40:
+        return (40 * rate_per_hours) + ((hours-40) * 1.5 * rate_per_hours)
+    elif hours < 0 :
         print("Entered hours is wrong")
-    else :
-        return h * r
-p = computepay(h, r)
-print("Pay",p)
+    else:
+        return hours * rate_per_hours
+
+pay = computepay(hours,rate_per_hours)
+
+print("The pay is", pay)
