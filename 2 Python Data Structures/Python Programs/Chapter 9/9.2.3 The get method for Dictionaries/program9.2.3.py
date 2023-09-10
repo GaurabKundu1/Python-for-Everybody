@@ -7,3 +7,5 @@ for name in names :
     else :
         x = 0
     x = counts.get(name, 0)
+    counts[name] = x + 1
+print(counts)
