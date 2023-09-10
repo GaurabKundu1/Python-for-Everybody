@@ -6,6 +6,6 @@ for value in [3, 41, 9, 74, 15] :
         smallest = value
     elif value < smallest :
         smallest = value
-        print (smallest, value)
+    print (smallest, value)
 
 print('After', smallest)
